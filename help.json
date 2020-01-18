@@ -1,0 +1,7 @@
+{
+   "add": "Add files to package.json for mimic. ",
+   "init": "Initial configuration command.",
+   "remove": "Removes the mimication files in package.json.",
+   "reset": "Reset package.json data.",
+   "start": "Mimication starts."
+}

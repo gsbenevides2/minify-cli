@@ -1,0 +1,44 @@
+{
+ "author": "gsbenevides2",
+ "bin": {
+	"minify-cli": "index.js"
+ },
+ "config": {
+	"commitizen": {
+	 "path": "./node_modules/cz-conventional-changelog"
+	}
+ },
+ "dependencies": {
+	"chalk": "^3.0.0",
+	"commander": "^4.1.0",
+	"inquirer": "^7.0.3",
+	"ncp": "^2.0.0",
+	"node-minify": "^3.6.0"
+ },
+ "description": "Smart html, css and js file simulator.",
+ "devDependencies": {
+	"@commitlint/cli": "^8.3.5",
+	"@commitlint/config-conventional": "^8.3.4",
+	"cz-conventional-changelog": "^3.0.2",
+	"husky": "^4.0.10"
+ },
+ "husky": {
+	"hooks": {
+	 "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+	 "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+	}
+ },
+ "keywords": [
+	"smart minify file",
+	"minify file",
+	"css",
+	"js",
+	"html"
+	 ],
+	 "license": "MIT",
+	 "main": "index.js",
+	 "name": "minify-cli",
+	 "readmeFilename": "readme.md",
+	 "repository": "https://github.com/gsbenevides2/minify-cli",
+	 "version": "1.0.0"
+}
